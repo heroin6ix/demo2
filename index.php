@@ -1,6 +1,7 @@
 <?php
 require_once 'config.php';
-
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -46,30 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php include 'header.php'; ?>
 
-<header class="header">
-    <div class="header-container">
-        <div class="logo">
-            <img src="logo.svg" alt="Водить.РФ" onerror="this.src='https://placehold.co/50x50/007BFF/white?text=В'">
-            <span>Водить.РФ</span>
-        </div>
-        
-        <nav class="nav-menu">
-            <ul class="nav-list">
-                <li><a href="index.php" class="nav-link">🔑 Вход</a></li>
-                <li><a href="register.php" class="nav-link">📝 Регистрация</a></li>
-            </ul>
-        </nav>
-        
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</header>
-
-<div class="container">
+<div class="container auth">
     <div style="text-align: center; margin-bottom: 30px;">
         <h1>Добро пожаловать</h1>
         <p style="font-size: 18px; color: #6C757D;">Вход в систему обучения вождению речного транспорта</p>
@@ -94,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p style="margin: 0; font-size: 13px; color: #007BFF;">
             🔐 <strong>Тестовые данные:</strong><br>
             Админ: <strong>Admin26</strong> / <strong>Demo20</strong><br>
-            Пользователь: зарегистрируйтесь сами
+            Пользователь: test1111 / test1111
         </p>
     </div>
 </div>
@@ -120,5 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         });
     }
 </script>
+<script src="header.js"></script>
 </body>
 </html>

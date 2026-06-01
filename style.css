@@ -32,11 +32,13 @@ body {
     body {
         padding: 12px;
     }
+
     .container {
         padding: 20px 18px;
         border-radius: 24px;
     }
 }
+
 
 /* ========== ТИПОГРАФИКА ========== */
 h1 {
@@ -45,7 +47,7 @@ h1 {
     background: linear-gradient(120deg, #007BFF, #4CCFEO);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: black;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
 }
@@ -67,7 +69,9 @@ h3 {
 }
 
 /* ========== ФОРМЫ И ПОЛЯ ========== */
-input, select, textarea {
+input,
+select,
+textarea {
     font-family: 'Rubik', sans-serif;
     padding: 14px 16px;
     margin: 8px 0 16px 0;
@@ -80,7 +84,9 @@ input, select, textarea {
     background: #ffffff;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border-color: #4CCFEO;
     box-shadow: 0 0 0 3px rgba(76, 207, 224, 0.2);
@@ -96,7 +102,8 @@ label {
 }
 
 /* Кнопки — красивые градиенты и анимация */
-button, .btn {
+button,
+.btn {
     background: linear-gradient(90deg, #007BFF, #0099cc);
     color: white;
     border: none;
@@ -113,13 +120,15 @@ button, .btn {
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
     background: linear-gradient(90deg, #005fbf, #007BFF);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
 }
 
-button:active, .btn:active {
+button:active,
+.btn:active {
     transform: translateY(1px);
 }
 
@@ -148,12 +157,15 @@ button:active, .btn:active {
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-5px);
     }
+
     75% {
         transform: translateX(5px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -283,16 +295,17 @@ a:hover {
     border: 1px solid rgba(0, 123, 255, 0.1);
 }
 
+
 /* ========== ЛОГОТИП И ХЕДЕР ========== */
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .logo img {
-    height: 55px;
+    height: 20px;
     width: auto;
 }
 
@@ -311,6 +324,7 @@ a:hover {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -336,13 +350,17 @@ a:hover {
     h1 {
         font-size: 30px;
     }
+
     h2 {
         font-size: 24px;
     }
+
     .slider img {
         height: 150px;
     }
-    th, td {
+
+    th,
+    td {
         padding: 10px;
         font-size: 13px;
     }
@@ -353,39 +371,49 @@ a:hover {
     h1 {
         font-size: 24px;
     }
+
     h2 {
         font-size: 20px;
     }
+
     h3 {
         font-size: 18px;
     }
+
     .slider {
         flex-direction: column;
         gap: 12px;
     }
+
     .slider img {
         max-width: 100%;
         height: 160px;
     }
+
     .slider button {
         padding: 8px 16px;
         font-size: 20px;
         width: auto;
     }
-    th, td {
+
+    th,
+    td {
         padding: 8px;
         font-size: 12px;
         display: block;
         text-align: right;
         position: relative;
     }
+
     th {
         display: none;
     }
+
     td {
         border-bottom: 1px solid #dee2e6;
         padding-left: 50%;
     }
+
     td::before {
         content: attr(data-label);
         position: absolute;
@@ -395,15 +423,19 @@ a:hover {
         font-weight: bold;
         color: #007BFF;
     }
+
     .logo span {
         font-size: 22px;
     }
+
     .logo img {
         height: 40px;
     }
+
     .filters {
         gap: 8px;
     }
+
     .filters a {
         padding: 6px 14px;
         font-size: 13px;
@@ -433,6 +465,7 @@ a:hover {
     background: #4CCFEO;
     color: white;
 }
+
 /* ========== ШАПКА (ПРЕМИУМ ДИЗАЙН) ========== */
 .header {
     position: sticky;
@@ -442,7 +475,7 @@ a:hover {
     backdrop-filter: blur(20px);
     box-shadow: 0 4px 20px rgba(0, 123, 255, 0.1);
     border-bottom: 2px solid rgba(76, 207, 224, 0.3);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 0 0 30px 30px;
 }
 
@@ -463,6 +496,9 @@ a:hover {
     gap: 12px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-left: -200px;
+    position: relative;
+    top: 5px;
 }
 
 .logo:hover {
@@ -577,15 +613,15 @@ a:hover {
     .header-container {
         padding: 12px 20px;
     }
-    
+
     .logo span {
         font-size: 22px;
     }
-    
+
     .logo img {
         height: 40px;
     }
-    
+
     .nav-link {
         padding: 8px 14px;
         font-size: 14px;
@@ -597,7 +633,7 @@ a:hover {
     .burger {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -613,16 +649,16 @@ a:hover {
         border-radius: 0 30px 30px 0;
         z-index: 999;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-list {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .nav-link {
         display: block;
         padding: 12px 20px;
@@ -631,29 +667,29 @@ a:hover {
         background: rgba(0, 123, 255, 0.05);
         border-radius: 50px;
     }
-    
+
     .nav-link::before {
         display: none;
     }
-    
+
     .nav-link:hover {
         background: rgba(0, 123, 255, 0.15);
         transform: translateX(5px);
     }
-    
+
     .logout-btn {
         margin-top: 10px;
     }
-    
+
     /* Анимация бургера в крестик */
     .burger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     .burger.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .burger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
